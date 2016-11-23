@@ -20,6 +20,10 @@ public class Constants {
 	// Joystick Ports
 	public static final int STICK_PORT = 0;
 	
+	// Joystick Stick Mapping
+	public static final int STICK_THROTTLE = 1;
+	public static final int STICK_TURN = 3;
+	
 	// Joystick Button Mapping
 	public static final int TRIGGER_NUMBER = 1;
 	public static final int THUMB_BUTTON_NUMBER = 5;
