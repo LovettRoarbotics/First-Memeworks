@@ -104,4 +104,9 @@ public class Robot extends IterativeRobot {
     public void testPeriodic() {
         LiveWindow.run();
     }
+    
+    public void log(String key, String s){
+    	SmartDashboard.putString(key, s);
+    	System.out.println(key + " : " + s);
+    }
 }
