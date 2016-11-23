@@ -22,6 +22,15 @@ public class OI {
 	// Buttons
 	Button trigger = new JoystickButton(stick, Constants.TRIGGER_NUMBER);
 	Button thumb_button = new JoystickButton(stick, Constants.THUMB_BUTTON_NUMBER);
+	
+	// Getters and Setters
+	public double getThrottle(){
+		return stick.getRawAxis(Constants.STICK_THROTTLE);
+	}
+	
+	public double getTurn(){
+		return stick.getRawAxis(Constants.STICK_TURN);
+	}
     
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to
