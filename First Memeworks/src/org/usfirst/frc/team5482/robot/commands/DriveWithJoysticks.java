@@ -15,10 +15,15 @@ public class DriveWithJoysticks extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+       	Robot.log("DriveWithJoysticks", "Initializing...");
+    	Robot.driveTrain.init();
+    	Robot.log("DriveWithJoysticks", "Done initializing.");
+    	Robot.log("DriveWithJoysticks", "Driving with joysticks...");
     }
 
-    // Called repeatedly when this Command is scheduled to run
+    // Called repeatedly when thiSs Command is scheduled to run
     protected void execute() {
+    	Robot.driveTrain.arcadeDrive();
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -28,10 +33,12 @@ public class DriveWithJoysticks extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	Robot.log("DriveWithJoysticks", "Ended!");
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
+    	Robot.log("DriveWithJoysticks", "Interupted!");
     }
 }
