@@ -26,9 +26,11 @@ public class DriveTrain extends Subsystem {
     }
     
     public void init(){
+    	Robot.log("DriveTrain", "Initializing...");
     	left = new Talon(RobotMap.leftMotor);
     	right = new Talon(RobotMap.rightMotor);
     	drive = new RobotDrive(left, right);
+    	Robot.log("DriveTrain", "Initialized!");
     }
     
     public void arcadeDrive(){
